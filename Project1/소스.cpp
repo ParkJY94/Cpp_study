@@ -21,14 +21,11 @@ public:
     {
         cout << "age : " << age << endl << "height : " << height << endl << "weight : " << weight << endl;
     }
-
-
 };
 
 
 int main() 
 {
-    // new 배열할당
     human james;
     james.set_human(18, 180, 70);
     james.show_stat();
