@@ -8,6 +8,7 @@ int main()
     // new 배열할당
     int array_size;
 
+
     cout << "배열 사이즈 입력 : ";
     cin >> array_size;
 
