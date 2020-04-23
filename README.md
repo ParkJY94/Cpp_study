@@ -1,6 +1,7 @@
 #1장
 ### 1. Hello World
 ### 2. namespace
+####     - 저장된 개체가 어디 소속인지 지정해주는 것.
 
 ```cpp
 int main() 
