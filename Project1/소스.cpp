@@ -2,26 +2,27 @@
 
 using namespace std;
 
-void value3(int& a)
-{
-    a = 3;
-}
-int& value(int& a)
-{
-    return a;
-}
 
 int main() 
 {
-    int a = 5;
-    
-    cout << " a = " << a << endl;
-    value3(a);
-    cout << a << endl;
+    // new 배열할당
+    int array_size;
 
-    value(a)++;
-    
-    cout << a << endl;
+    cout << "배열 사이즈 입력 : ";
+    cin >> array_size;
 
+    int *arr = new int[array_size];
+
+    
+    for (int i = 0; i < array_size; i++)
+    {
+        cout << "배열" << i << "번째 입력 : " << endl;
+        cin >> arr[i];
+    }
+    for (int i = 0; i < array_size; i++)
+    {
+        cout << arr[i] << endl;
+    }
+    cout << endl;
     return 0;
 }
