@@ -24,5 +24,7 @@ int main()
         cout << arr[i] << endl;
     }
     cout << endl;
+
+    delete[] arr;
     return 0;
 }
