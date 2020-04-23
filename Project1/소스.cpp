@@ -1,13 +1,27 @@
 #include <iostream>
-#include "ns1.h"
-#include "ns2.h"
+
+using namespace std;
+
+void value3(int& a)
+{
+    a = 3;
+}
+int& value(int& a)
+{
+    return a;
+}
 
 int main() 
 {
-    std::cout << "Hello, World" << std::endl;
+    int a = 5;
+    
+    cout << " a = " << a << endl;
+    value3(a);
+    cout << a << endl;
 
-    ns1::print();
-    ns2::print();
+    value(a)++;
+    
+    cout << a << endl;
 
     return 0;
 }
